@@ -1,2 +1,5 @@
-# Sweetly
-A Sweet Page with some treats (WORK IN PROGRESS)
+# Gulp Starter for CSS Tricks Tutorial  
+
+This repo is a gulp starter for this CSS Tricks tutorial. 
+
+Remember to do run the `npm install` command after cloning this repo :) 
