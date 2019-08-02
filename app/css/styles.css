@@ -3,7 +3,8 @@
 html body {
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100vw; }
 
 body .pages .one header .wrap {
   display: flex; }
@@ -27,28 +28,52 @@ body .pages .one header .wrap {
       body .pages .one header .wrap .content .logo img {
         width: 30px;
         margin-right: 10px; }
+      @media only screen and (max-width: 1215px) {
+        body .pages .one header .wrap .content .logo {
+          align-items: center;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          margin-top: 50px;
+          justify-content: center; } }
     body .pages .one header .wrap .content .logo:hover {
       color: #5db3b3; }
-  body .pages .one header .wrap .container .menu ul {
-    display: inline-flex;
-    list-style: none;
-    font-weight: 500;
-    float: right;
-    font-size: 1.7rem;
-    padding: 50px;
-    margin-right: 50px;
-    color: #a0a0a0;
-    font-family: "Roboto", monospace;
-    text-transform: uppercase; }
-    body .pages .one header .wrap .container .menu ul li {
-      margin-left: 100px;
-      padding: 15px;
-      padding-top: 0;
-      transition-duration: 0.333s; }
-    body .pages .one header .wrap .container .menu ul li:first-child {
-      color: #505050; }
-    body .pages .one header .wrap .container .menu ul li:hover {
-      color: #505050; }
+  body .pages .one header .wrap .container {
+    width: 100vw; }
+    body .pages .one header .wrap .container .menu ul {
+      display: inline-flex;
+      list-style: none;
+      font-weight: 500;
+      float: right;
+      font-size: 1.7rem;
+      margin-top: 75px;
+      margin-right: 10vw;
+      color: #a0a0a0;
+      font-family: "Roboto", monospace;
+      text-transform: uppercase; }
+      @media only screen and (max-width: 1215px) {
+        body .pages .one header .wrap .container .menu ul {
+          margin-top: 50px;
+          width: 100vw;
+          align-items: center;
+          justify-content: center;
+          float: left;
+          padding: 0px;
+          font-weight: 500;
+          color: #505050; } }
+      body .pages .one header .wrap .container .menu ul li {
+        margin-left: 2.5vw;
+        padding: 0;
+        padding-top: 0;
+        transition-duration: 0.333s; }
+        @media only screen and (max-width: 400px) {
+          body .pages .one header .wrap .container .menu ul li {
+            margin-left: 0;
+            padding: 0; } }
+      body .pages .one header .wrap .container .menu ul li:first-child {
+        color: #505050; }
+      body .pages .one header .wrap .container .menu ul li:hover {
+        color: #505050; }
 
 body .pages .one .main {
   display: inline-flex;
@@ -59,6 +84,9 @@ body .pages .one .main {
     body .pages .one .main .wrap .content {
       margin: 115px;
       margin-top: 155px; }
+      @media only screen and (max-width: 1215px) {
+        body .pages .one .main .wrap .content {
+          margin-top: 125px; } }
       body .pages .one .main .wrap .content .title {
         font-size: 8.5rem;
         float: left;
@@ -66,6 +94,9 @@ body .pages .one .main {
         width: 100%;
         color: #5db3b3;
         margin-bottom: 15px; }
+        @media only screen and (max-width: 1215px) {
+          body .pages .one .main .wrap .content .title {
+            margin-bottom: 5px; } }
       body .pages .one .main .wrap .content .sidebar {
         background: url("/images/bg.jpg");
         width: 75vw;
@@ -76,6 +107,11 @@ body .pages .one .main {
         position: absolute;
         float: right;
         z-index: -1; }
+        @media only screen and (max-width: 1215px) {
+          body .pages .one .main .wrap .content .sidebar {
+            width: 75vw;
+            height: 500px;
+            transform: translateX(250px) translateY(0px); } }
       body .pages .one .main .wrap .content .info {
         margin-bottom: 45px;
         margin-left: 0;
@@ -84,6 +120,9 @@ body .pages .one .main {
         font-size: 1.75rem;
         font-family: "Roboto", monospace;
         color: #a0a0a0; }
+        @media only screen and (max-width: 1215px) {
+          body .pages .one .main .wrap .content .info {
+            margin-bottom: 5px; } }
       body .pages .one .main .wrap .content .container {
         margin: 30px;
         font-family: monospace;
@@ -103,12 +142,12 @@ body .pages .one .main {
         border: 2px solid #5db3b3; }
 
 body .pages .one footer {
-  width: 95%;
+  width: 100%;
   height: 120px;
   float: left;
-  color: #505050; }
+  color: #505050;
+  background-color: white; }
   body .pages .one footer .wrap {
-    background-color: white;
     z-index: 10;
     padding-top: 25px;
     display: inline-flex;
@@ -122,6 +161,11 @@ body .pages .one footer {
       body .pages .one footer .wrap .inner-wrap .container .content ul li {
         width: 50px;
         padding: 15px; }
+        @media only screen and (max-width: 1215px) {
+          body .pages .one footer .wrap .inner-wrap .container .content ul li {
+            margin: 0;
+            transform: translateX(-7.5vw);
+            width: 2vw; } }
         body .pages .one footer .wrap .inner-wrap .container .content ul li img {
           width: 40px;
           height: 40px; }
@@ -133,6 +177,9 @@ body .pages .one footer {
       color: #a0a0a0;
       font-size: 1.5rem;
       margin-top: 20px; }
+      @media only screen and (max-width: 1215px) {
+        body .pages .one footer .wrap .inner-wrap .container .page_action {
+          margin-left: -7.5vw; } }
     body .pages .one footer .wrap .inner-wrap {
       flex-grow: 2; }
       body .pages .one footer .wrap .inner-wrap .container {
@@ -140,7 +187,11 @@ body .pages .one footer {
         float: right; }
         body .pages .one footer .wrap .inner-wrap .container .sidebar {
           float: right;
-          margin-right: 12.5vw;
           margin-left: 25vw;
           font-size: 3.5rem;
           text-align: center; }
+          @media only screen and (max-width: 1215px) {
+            body .pages .one footer .wrap .inner-wrap .container .sidebar {
+              font-size: 2rem;
+              margin-top: 25px;
+              margin-left: 27.5vw; } }
