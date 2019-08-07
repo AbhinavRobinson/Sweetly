@@ -34,6 +34,9 @@ body {
               img {
                 width: 30px;
                 margin-right: 10px;
+                @media #{$midscreens} {
+                  width: 50px;
+                }
               }
               display: inline-flex;
               font-weight: 900;
@@ -55,6 +58,9 @@ body {
                 margin-top: 50px;
                 justify-content: center;
               }
+              @media #{$midscreens} {
+                font-size: 3.25rem;
+              }
             }
             .logo:hover {
               color: $base-color;
@@ -74,10 +80,6 @@ body {
                 color: $grey-color;
                 font-family: $font;
                 text-transform: uppercase;
-                // @media #{$smartphone} {
-                // }
-                // @media #{$midscreens} {
-                // }
                 @media #{$fullscreens} {
                   margin-top: 50px;
                   width: 100vw;
@@ -88,15 +90,17 @@ body {
                   font-weight: 500;
                   color: $dark-grey-color;
                 }
+                @media #{$midscreens} {
+                  font-size: 1.5rem;
+                  // margin-right: 10px;
+                }
                 li {
-                  @media #{$smartphone} {
-                    margin-left: 0;
+                  @media #{$midscreens} {
                     padding: 0;
+                    margin-left: 20px;
+                    font-size: 1.3rem;
+                    // transform: translateX(-20px);
                   }
-                  // @media #{$midscreens} {
-                  // }
-                  // @media #{$fullscreens} {
-                  // }
                   margin-left: 2.5vw;
                   padding: 0;
                   padding-top: 0;
@@ -123,12 +127,19 @@ body {
           .content {
             margin: 115px;
             margin-top: 155px;
+            @media #{$midscreens} {
+              transform: translateX(-25px) translateY(-2.5vh);
+            }
             @media #{$fullscreens} {
               margin-top: 125px;
             }
             .title {
               @media #{$fullscreens} {
                 margin-bottom: 5px;
+              }
+              @media #{$midscreens} {
+                font-size: 7.5rem;
+                margin-top: 5vh;
               }
               font-size: 8.5rem;
               float: left;
@@ -149,8 +160,13 @@ body {
               z-index: -1;
               @media #{$fullscreens} {
                 width: 75vw;
-                height: 500px;
+                height: 750px;
                 transform: translateX(250px) translateY(0px);
+              }
+              @media #{$midscreens} {
+                transform: translateX(200px) translateY(100px);
+                height: 450px;
+                width: 60vw;
               }
             }
             .info {
@@ -187,10 +203,10 @@ body {
           }
         }
       }
-
+      
       footer {
         width: 100%;
-        height: 120px;
+        height: 250px;
         float: left;
         color: $dark-grey-color;
         background-color: white;
@@ -209,6 +225,7 @@ body {
                   list-style: none;
                   display: inline-flex;
                   li {
+                    
                     @media #{$fullscreens} {
                       margin: 0;
                       transform: translateX(-7.5vw);
@@ -218,6 +235,13 @@ body {
                     img {
                       width: 40px;
                       height: 40px;
+                      @media #{$midscreens} {
+                        width: 25px;
+                        height: 25px;
+                        transform: translateX(-25px);
+                        margin-left: 20px;
+                        margin-top: 10px;
+                      }
                     }
                     padding: 15px;
                   }
@@ -230,6 +254,11 @@ body {
               .page_action {
                 @media #{$fullscreens} {
                   margin-left: -7.5vw;
+                }
+                @media #{$midscreens} {
+                  margin-left: -5vw;
+                  margin-top: 27.5px;
+                  font-size: 1.2rem;
                 }
                 width: 1000px;
                 position: absolute;
@@ -252,6 +281,9 @@ body {
                   margin-top: 25px;
                   // margin-right: -10vw;
                   margin-left: 27.5vw;
+                }
+                @media #{$midscreens} {
+                  transform: translateX(-2.5vw);
                 }
                 float: right;
                 // margin-right: 12.5vw;

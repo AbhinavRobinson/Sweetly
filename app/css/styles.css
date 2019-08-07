@@ -28,6 +28,9 @@ body .pages .one header .wrap {
       body .pages .one header .wrap .content .logo img {
         width: 30px;
         margin-right: 10px; }
+        @media only screen and (max-width: 800px) {
+          body .pages .one header .wrap .content .logo img {
+            width: 50px; } }
       @media only screen and (max-width: 1215px) {
         body .pages .one header .wrap .content .logo {
           align-items: center;
@@ -36,6 +39,9 @@ body .pages .one header .wrap {
           margin: 0;
           margin-top: 50px;
           justify-content: center; } }
+      @media only screen and (max-width: 800px) {
+        body .pages .one header .wrap .content .logo {
+          font-size: 3.25rem; } }
     body .pages .one header .wrap .content .logo:hover {
       color: #5db3b3; }
   body .pages .one header .wrap .container {
@@ -61,15 +67,19 @@ body .pages .one header .wrap {
           padding: 0px;
           font-weight: 500;
           color: #505050; } }
+      @media only screen and (max-width: 800px) {
+        body .pages .one header .wrap .container .menu ul {
+          font-size: 1.5rem; } }
       body .pages .one header .wrap .container .menu ul li {
         margin-left: 2.5vw;
         padding: 0;
         padding-top: 0;
         transition-duration: 0.333s; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 800px) {
           body .pages .one header .wrap .container .menu ul li {
-            margin-left: 0;
-            padding: 0; } }
+            padding: 0;
+            margin-left: 20px;
+            font-size: 1.3rem; } }
       body .pages .one header .wrap .container .menu ul li:first-child {
         color: #505050; }
       body .pages .one header .wrap .container .menu ul li:hover {
@@ -84,6 +94,9 @@ body .pages .one .main {
     body .pages .one .main .wrap .content {
       margin: 115px;
       margin-top: 155px; }
+      @media only screen and (max-width: 800px) {
+        body .pages .one .main .wrap .content {
+          transform: translateX(-25px) translateY(-2.5vh); } }
       @media only screen and (max-width: 1215px) {
         body .pages .one .main .wrap .content {
           margin-top: 125px; } }
@@ -97,6 +110,10 @@ body .pages .one .main {
         @media only screen and (max-width: 1215px) {
           body .pages .one .main .wrap .content .title {
             margin-bottom: 5px; } }
+        @media only screen and (max-width: 800px) {
+          body .pages .one .main .wrap .content .title {
+            font-size: 7.5rem;
+            margin-top: 5vh; } }
       body .pages .one .main .wrap .content .sidebar {
         background: url("/images/bg.jpg");
         width: 75vw;
@@ -110,8 +127,13 @@ body .pages .one .main {
         @media only screen and (max-width: 1215px) {
           body .pages .one .main .wrap .content .sidebar {
             width: 75vw;
-            height: 500px;
+            height: 750px;
             transform: translateX(250px) translateY(0px); } }
+        @media only screen and (max-width: 800px) {
+          body .pages .one .main .wrap .content .sidebar {
+            transform: translateX(200px) translateY(100px);
+            height: 450px;
+            width: 60vw; } }
       body .pages .one .main .wrap .content .info {
         margin-bottom: 45px;
         margin-left: 0;
@@ -143,7 +165,7 @@ body .pages .one .main {
 
 body .pages .one footer {
   width: 100%;
-  height: 120px;
+  height: 250px;
   float: left;
   color: #505050;
   background-color: white; }
@@ -169,6 +191,13 @@ body .pages .one footer {
         body .pages .one footer .wrap .inner-wrap .container .content ul li img {
           width: 40px;
           height: 40px; }
+          @media only screen and (max-width: 800px) {
+            body .pages .one footer .wrap .inner-wrap .container .content ul li img {
+              width: 25px;
+              height: 25px;
+              transform: translateX(-25px);
+              margin-left: 20px;
+              margin-top: 10px; } }
     body .pages .one footer .wrap .inner-wrap .container .page_action {
       width: 1000px;
       position: absolute;
@@ -180,6 +209,11 @@ body .pages .one footer {
       @media only screen and (max-width: 1215px) {
         body .pages .one footer .wrap .inner-wrap .container .page_action {
           margin-left: -7.5vw; } }
+      @media only screen and (max-width: 800px) {
+        body .pages .one footer .wrap .inner-wrap .container .page_action {
+          margin-left: -5vw;
+          margin-top: 27.5px;
+          font-size: 1.2rem; } }
     body .pages .one footer .wrap .inner-wrap {
       flex-grow: 2; }
       body .pages .one footer .wrap .inner-wrap .container {
@@ -195,3 +229,6 @@ body .pages .one footer {
               font-size: 2rem;
               margin-top: 25px;
               margin-left: 27.5vw; } }
+          @media only screen and (max-width: 800px) {
+            body .pages .one footer .wrap .inner-wrap .container .sidebar {
+              transform: translateX(-2.5vw); } }
