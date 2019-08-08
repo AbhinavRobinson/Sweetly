@@ -1,4 +1,4 @@
-$base-color: rgb(93, 179, 179);
+$base-color: rgb(11, 185, 177);
 $grey-color: rgb(160, 160, 160);
 $dark-grey-color: rgb(80, 80, 80);
 $font: "Roboto", monospace;
@@ -11,6 +11,7 @@ $font2: "Raleway", sans-serif;
 $smartphone: "only screen and (max-width : 400px)";
 $midscreens: "only screen and (max-width : 800px)";
 $fullscreens: "only screen and (max-width : 1215px)";
+
 
 // CODE
 html body {
@@ -29,11 +30,20 @@ body {
           .content {
             width: 100%;
             float: left;
-            height: 120px;
+            height: 12.5vh;
+            @media #{$fullscreens} {
+              height: 22.5vh;
+            }
             .logo {
+              @media #{$fullscreens} {
+                transform: translateX(22vw) translateY(7.5vh);
+              }
               img {
                 width: 30px;
                 margin-right: 10px;
+                @media #{$fullscreens} {
+                  width: 15vw;
+                }
                 @media #{$midscreens} {
                   width: 50px;
                 }
@@ -54,6 +64,7 @@ body {
                 align-items: center;
                 width: 100%;
                 padding: 0;
+                font-size: 12.5vw;
                 margin: 0;
                 margin-top: 50px;
                 justify-content: center;
@@ -81,11 +92,13 @@ body {
                 font-family: $font;
                 text-transform: uppercase;
                 @media #{$fullscreens} {
-                  margin-top: 50px;
-                  width: 100vw;
+                  margin-top: 14vh;
+                  width: 125vw;
+                  font-size: 3rem;
                   align-items: center;
                   justify-content: center;
                   float: left;
+                  transform: translateX(10vw);
                   padding: 0px;
                   font-weight: 500;
                   color: $dark-grey-color;
@@ -131,11 +144,14 @@ body {
               transform: translateX(-25px) translateY(-2.5vh);
             }
             @media #{$fullscreens} {
-              margin-top: 125px;
+              margin-top: 10vh;
+              transform: translateX(-7.5vw) translateY(12.5vh) ;
             }
             .title {
               @media #{$fullscreens} {
                 margin-bottom: 5px;
+                font-size:17.5rem;
+                margin-top: -10vh;
               }
               @media #{$midscreens} {
                 font-size: 7.5rem;
@@ -159,9 +175,9 @@ body {
               float: right;
               z-index: -1;
               @media #{$fullscreens} {
-                width: 75vw;
-                height: 750px;
-                transform: translateX(250px) translateY(0px);
+                width: 120vw;
+                height: 75vh;
+                transform: translateX(27.5vw) translateY(-10vh);
               }
               @media #{$midscreens} {
                 transform: translateX(200px) translateY(100px);
@@ -172,6 +188,10 @@ body {
             .info {
               @media #{$fullscreens} {
                 margin-bottom: 5px;
+                font-size: 10vw;
+                width: 75vw;
+                transform: translateY(2.5vh);
+                font-weight: 400;
               }
               margin-bottom: 45px;
               margin-left: 0;
@@ -188,12 +208,20 @@ body {
               font-weight: 500;
               color: $grey-color;
               font-family: $font2;
-              border-radius: 50px; //more than height of box
+              border-radius: 150px; //more than height of box
               display: inline-flex;
               padding: 15px;
               margin: 0;
               border: 2px solid $grey-color;
               transition-duration: 0.333s;
+              @media #{$fullscreens} {
+                font-size: 7.5vw;
+                font-weight: 500;
+                transform: translateY(2vh);
+                // background-color: rgba(255, 255, 255, 0.739);
+                border: 4px solid $grey-color;
+                padding: 20px;
+              }
             }
             .container:hover {
               color: $base-color;
@@ -210,6 +238,9 @@ body {
         float: left;
         color: $dark-grey-color;
         background-color: white;
+        @media #{$fullscreens} {
+          transform: translateY(22.5vh);
+        }
         .wrap {
           z-index: 10;
           padding-top: 25px;
@@ -225,11 +256,10 @@ body {
                   list-style: none;
                   display: inline-flex;
                   li {
-                    
                     @media #{$fullscreens} {
                       margin: 0;
                       transform: translateX(-7.5vw);
-                      width: 2vw;
+                      width: 10vw;
                     }
                     width: 50px;
                     img {
@@ -241,6 +271,11 @@ body {
                         transform: translateX(-25px);
                         margin-left: 20px;
                         margin-top: 10px;
+                      }
+                      @media #{$fullscreens} {
+                        width: 100px;
+                        transform: translateX(50vw) translateY(2vh);
+                        height: 100px;
                       }
                     }
                     padding: 15px;
@@ -254,6 +289,9 @@ body {
               .page_action {
                 @media #{$fullscreens} {
                   margin-left: -7.5vw;
+                  font-size: 4.65vw;
+                  width: 120vw;
+                  transform: translateX(-12.5vw) translateY(-7.5vh);
                 }
                 @media #{$midscreens} {
                   margin-left: -5vw;
@@ -281,9 +319,11 @@ body {
                   margin-top: 25px;
                   // margin-right: -10vw;
                   margin-left: 27.5vw;
+                  display: none;
                 }
                 @media #{$midscreens} {
                   transform: translateX(-2.5vw);
+                  display: none;
                 }
                 float: right;
                 // margin-right: 12.5vw;
