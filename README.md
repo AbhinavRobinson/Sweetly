@@ -1,4 +1,4 @@
-# Sweetly
+# Sweetly (Not Responsive)
 I wanted to see how fast i can make webpages :D
 
 INSTRUCTIONS:
@@ -15,8 +15,8 @@ IMPORTANT:
 - This project is still WIP and has a lot of bugs, and remains incomplete.
 
 TODO:
-- Making all pages             ETA Sunday 4 AUG 19 ?
-- Making it `Responsive`       ETA Saturday 3 AUG 19 
-- Add Slick Animations         ETA Tuesday 6 AUG 19 
-- Upload a github.io version   ETA Tuesday 6 AUG 19 
-- Get some backend working     ETA ???
+- Making all pages             
+- Making it `Responsive`       
+- Add Slick Animations         
+- Upload a github.io version   
+- Get some backend working    
