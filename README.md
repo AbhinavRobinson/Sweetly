@@ -1,6 +1,10 @@
 # Sweetly (Not Responsive)
 I wanted to see how fast i can make webpages :D
 
+## This is a personal project, and currently on hold due to other workloads, if you wish to make it responsive, dont forget to fork and star! <3
+
+### Abhinav Robinson <3 Open Source
+
 INSTRUCTIONS:
 - must have npm and node
 - install gulp
